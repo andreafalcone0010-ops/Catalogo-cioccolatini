@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chocolatier Collection - Multi-Language Ad Code</title>
+    <style>
+        :root {
+            --primary-dark: #1e110a;
+            --accent-gold: #c2410c;
+            --bg-allergeni: #fef2f2;
+            --text-allergeni: #991b1b;
+            --border-allergeni: #fee2e2;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: #f9fafb;
+            color: #1f2937;
+            margin: 0;
+            padding: 30px 15px;
+        }
+
+        .ad-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.06);
+            padding: 30px;
+            border: 1px solid #f3f4f6;
+        }
+
+        .lang-bar {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #f3f4f6;
+        }
+
+        .lang-bar label {
+            font-size: 13px;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: #6b7280;
+        }
+
+        .lang-select {
+            padding: 8px 12px;
+            border-radius: 8px;
+            border: 1px solid #d1d5db;
+            background-color: #ffffff;
+            font-weight: 600;
+            color: var(--primary-dark);
+            cursor: pointer;
+            outline: none;
+        }
+
+        /* Intestazione Brand / Logo in Orizzontale */
+        .brand-header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 10px 0;
+        }
+
+        .logo-title {
+            font-size: 42px;
+            font-weight: 800;
+            letter-spacing: 0.05em;
+            color: var(--accent-gold);
+            margin: 0;
+            line-height: 1.1;
+        }
+
+        .logo-subtitle-top {
+            font-size: 14px;
+            font-weight: 400;
+            letter-spacing: 0.3em;
+            color: var(--primary-dark);
+            text-transform: uppercase;
+            margin-bottom: 4px;
+        }
+
+        .logo-services {
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 0.15em;
+            color: #4b5563;
+            text-transform: uppercase;
+            margin: 12px 0 0 0;
+            word-spacing: 0.05em;
+        }
+
+        .header-catalogo p {
+            color: #6b7280;
+            font-size: 15px;
+            margin: 20px 0 0 0;
+            font-style: italic;
+        }
+
+        .catalog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+        }
+
+        .product-card {
+            background: #ffffff;
+            border-radius: 16px;
+            overflow: hidden;
+            border: 1px solid #e5e7eb;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+        }
+
+        .image-container {
+            width: 100%;
+            height: 220px;
+            background-color: #fafafa;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .product-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .product-content {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .product-subtitle {
+            font-size: 11px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--accent-gold);
+            margin-bottom: 6px;
+        }
+
+        .product-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--primary-dark);
+            margin: 0 0 10px 0;
+            min-height: 44px;
+            display: flex;
+            align-items: center;
+        }
+
+        .product-description {
+            font-size: 13.5px;
+            line-height: 1.5;
+            color: #4b5563;
+            margin-bottom: 16px;
+            flex-grow: 1;
+        }
+
+        .allergeni-box {
+            background-color: var(--bg-allergeni);
+            border: 1px solid var(--border-allergeni);
+            border-radius: 8px;
+            padding: 10px 12px;
+            margin-top: auto;
+        }
+
+        .allergeni-title {
+            font-size: 11px;
+            font-weight: 700;
+            color: var(--text-allergeni);
+            text-transform: uppercase;
+            margin-bottom: 4px;
+        }
+
+        .allergeni-list {
+            font-size: 11.5px;
+            line-height: 1.4;
+            color: #7f1d1d;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="ad-container">
+        
+        <div class="lang-bar">
+            <label for="langSelect" id="langLabel">Language / Lingua:</label>
+            <select id="langSelect" class="lang-select" onchange="changeLanguage(this.value)">
+                <option value="it">🇮🇹 Italiano</option>
+                <option value="en">🇬🇧 English</option>
+                <option value="de">🇩🇪 Deutsch</option>
+                <option value="es">🇪🇸 Español</option>
+                <option value="fr">🇫🇷 Français</option>
+            </select>
+        </div>
+
+        <!-- Sezione Logo Orizzontale Pasticceria Futura -->
+        <div class="brand-header">
+            <div class="logo-subtitle-top">Pasticceria</div>
+            <h1 class="logo-title">FUTURA</h1>
+            <div class="logo-services">Pasticceria &nbsp;|&nbsp; Caffetteria &nbsp;|&nbsp; Cioccolateria</div>
+            <div class="header-catalogo">
+                <p id="mainDesc">Gusci in pregiato cioccolato fondente 54% decorati a mano con burro di cacao e ripieni gourmet</p>
+            </div>
+        </div>
+
+        <div class="catalog-grid">
+
+            <!-- 1. COCCO -->
+            <div class="product-card">
+                <div class="image-container"><img src="foto_cocco.jpg" alt="Pralina Cocco" class="product-image"></div>
+                <div class="product-content">
+                    <div class="product-subtitle" data-key="sub1">Gusto Tropicale</div>
+                    <h2 class="product-title" data-key="title1">Pralina Fondente & Cocco</h2>
+                    <p class="product-description" data-key="desc1">Camicia di cioccolato fondente al 54% che racchiude un morbido e vellutato ripieno di cremino al cocco ed eleganti scaglie di cocco disidratato.</p>
+                    <div class="allergeni-box">
+                        <div class="allergeni-title" data-key="allLabel">⚠ Allergeni & Ingredienti</div>
+                        <p class="allergeni-list" data-key="all1">Contiene: soia e frutta a guscio (mandorle). Può contenere tracce di latte.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. VANIGLIA -->
+            <div class="product-card">
+                <div class="image-container"><img src="foto_vaniglia.jpg" alt="Pralina Vaniglia" class="product-image"></div>
+                <div class="product-content">
+                    <div class="product-subtitle" data-key="sub2">I Grandi Classici</div>
+                    <h2 class="product-title" data-key="title2">Pralina Fondente & Vaniglia Madagascar</h2>
+                    <p class="product-description" data-key="desc2">Un guscio lucido ed intenso impreziosito da un cuore morbido e avvolgente di cremino aromatizzato con le note calde della preziosa bacca di Vaniglia del Madagascar.</p>
+                    <div class="allergeni-box">
+                        <div class="allergeni-title" data-key="allLabel">⚠ Allergeni & Ingredienti</div>
+                        <p class="allergeni-list" data-key="all2">Contiene: soia e frutta a guscio (mandorle). Può contenere tracce di latte.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. LAMPONE -->
+            <div class="product-card">
+                <div class="image-container"><img src="foto_lampone.jpg" alt="Pralina Lampone" class="product-image"></div>
+                <div class="product-content">
+                    <div class="product-subtitle" data-key="sub3">Fruttati & Creativi</div>
+                    <h2 class="product-title" data-key="title3">Pralina Nocciola IGP & Lampone</h2>
+                    <p class="product-description" data-key="desc3">Copertura fondente 54% con una squisita farcitura interna di cremino alla Nocciola Piemonte IGP combinata con setoso cioccolato al latte e pezzetti croccanti di lampone disidratato.</p>
+                    <div class="allergeni-box">
+                        <div class="allergeni-title" data-key="allLabel">⚠ Allergeni & Ingredienti</div>
+                        <p class="allergeni-list" data-key="all3">Contiene: frutta a guscio (nocciole), latte e soia.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4. CAFFÈ -->
+            <div class="product-card">
+                <div class="image-container"><img src="foto_caffe.jpg" alt="Pralina Caffè" class="product-image"></div>
+                <div class="product-content">
+                    <div class="product-subtitle" data-key="sub4">Espresso Intenso</div>
+                    <h2 class="product-title" data-key="title4">Pralina Caffè Tierra Bio & Nocciola</h2>
