@@ -3,205 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chocolatier Collection - Multi-Language Ad Code</title>
+    <title>Pasticceria Futura - Praline</title>
     <style>
-        :root {
-            --primary-dark: #1e110a;
-            --accent-gold: #c2410c;
-            --bg-allergeni: #fef2f2;
-            --text-allergeni: #991b1b;
-            --border-allergeni: #fee2e2;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            background-color: #f9fafb;
-            color: #1f2937;
-            margin: 0;
-            padding: 30px 15px;
-        }
-
-        .ad-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            background: #ffffff;
-            border-radius: 20px;
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.06);
-            padding: 30px;
-            border: 1px solid #f3f4f6;
-        }
-
-        .lang-bar {
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-            gap: 10px;
-            margin-bottom: 30px;
-            padding-bottom: 15px;
-            border-bottom: 1px solid #f3f4f6;
-        }
-
-        .lang-bar label {
-            font-size: 13px;
-            font-weight: 600;
-            text-transform: uppercase;
-            color: #6b7280;
-        }
-
-        .lang-select {
-            padding: 8px 12px;
-            border-radius: 8px;
-            border: 1px solid #d1d5db;
-            background-color: #ffffff;
-            font-weight: 600;
-            color: var(--primary-dark);
-            cursor: pointer;
-            outline: none;
-        }
-
-        /* Intestazione Brand / Logo in Orizzontale */
-        .brand-header {
-            text-align: center;
-            margin-bottom: 40px;
-            padding: 10px 0;
-        }
-
-        .logo-title {
-            font-size: 42px;
-            font-weight: 800;
-            letter-spacing: 0.05em;
-            color: var(--accent-gold);
-            margin: 0;
-            line-height: 1.1;
-        }
-
-        .logo-subtitle-top {
-            font-size: 14px;
-            font-weight: 400;
-            letter-spacing: 0.3em;
-            color: var(--primary-dark);
-            text-transform: uppercase;
-            margin-bottom: 4px;
-        }
-
-        .logo-services {
-            font-size: 11px;
-            font-weight: 600;
-            letter-spacing: 0.15em;
-            color: #4b5563;
-            text-transform: uppercase;
-            margin: 12px 0 0 0;
-            word-spacing: 0.05em;
-        }
-
-        .header-catalogo p {
-            color: #6b7280;
-            font-size: 15px;
-            margin: 20px 0 0 0;
-            font-style: italic;
-        }
-
-        .catalog-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 25px;
-        }
-
-        .product-card {
-            background: #ffffff;
-            border-radius: 16px;
-            overflow: hidden;
-            border: 1px solid #e5e7eb;
-            display: flex;
-            flex-direction: column;
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
-        }
-
-        .product-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
-        }
-
-        .image-container {
-            width: 100%;
-            height: 220px;
-            background-color: #fafafa;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            overflow: hidden;
-        }
-
-        .product-image {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .product-content {
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            flex-grow: 1;
-        }
-
-        .product-subtitle {
-            font-size: 11px;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            color: var(--accent-gold);
-            margin-bottom: 6px;
-        }
-
-        .product-title {
-            font-size: 18px;
-            font-weight: 700;
-            color: var(--primary-dark);
-            margin: 0 0 10px 0;
-            min-height: 44px;
-            display: flex;
-            align-items: center;
-        }
-
-        .product-description {
-            font-size: 13.5px;
-            line-height: 1.5;
-            color: #4b5563;
-            margin-bottom: 16px;
-            flex-grow: 1;
-        }
-
-        .allergeni-box {
-            background-color: var(--bg-allergeni);
-            border: 1px solid var(--border-allergeni);
-            border-radius: 8px;
-            padding: 10px 12px;
-            margin-top: auto;
-        }
-
-        .allergeni-title {
-            font-size: 11px;
-            font-weight: 700;
-            color: var(--text-allergeni);
-            text-transform: uppercase;
-            margin-bottom: 4px;
-        }
-
-        .allergeni-list {
-            font-size: 11.5px;
-            line-height: 1.4;
-            color: #7f1d1d;
-            margin: 0;
-        }
+        :root { --primary: #1e110a; --accent: #c2410c; --bg-all: #fef2f2; --txt-all: #991b1b; }
+        body { font-family: system-ui, sans-serif; background: #f9fafb; color: #1f2937; margin: 0; padding: 20px 10px; }
+        .ad-container { max-width: 1200px; margin: 0 auto; background: #ffffff; border-radius: 20px; box-shadow: 0 10px 40px rgba(0,0,0,0.06); padding: 20px; border: 1px solid #f3f4f6; }
+        .lang-bar { display: flex; justify-content: flex-end; margin-bottom: 25px; padding-bottom: 15px; border-bottom: 1px solid #f3f4f6; }
+        .lang-select { padding: 8px 12px; border-radius: 8px; border: 1px solid #d1d5db; font-weight: 600; }
+        .brand-header { text-align: center; margin-bottom: 40px; }
+        .logo-title { font-size: 38px; font-weight: 800; letter-spacing: 0.05em; color: var(--accent); margin: 0; }
+        .logo-subtitle { font-size: 13px; letter-spacing: 0.3em; text-transform: uppercase; color: var(--primary); }
+        .logo-services { font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase; color: #4b5563; margin-top: 10px; }
+        .header-catalogo p { color: #6b7280; font-size: 14px; margin-top: 15px; }
+        .catalog-grid { display: grid; grid-template-columns: 1fr; gap: 25px; }
+        @media (min-width: 600px) { .catalog-grid { grid-template-columns: repeat(2, 1fr); } }
+        @media (min-width: 900px) { .catalog-grid { grid-template-columns: repeat(3, 1fr); } }
+        @media (min-width: 1200px) { .catalog-grid { grid-template-columns: repeat(4, 1fr); } }
+        .product-card { background: #ffffff; border-radius: 16px; overflow: hidden; border: 1px solid #e5e7eb; display: flex; flex-direction: column; }
+        .image-container { width: 100%; height: 220px; background: #fafafa; }
+        .product-image { width: 100%; height: 100%; object-fit: cover; }
+        .product-content { padding: 20px; display: flex; flex-direction: column; flex-grow: 1; }
+        .product-subtitle { font-size: 11px; font-weight: 600; text-transform: uppercase; color: var(--accent); margin-bottom: 6px; }
+        .product-title { font-size: 18px; font-weight: 700; color: var(--primary); margin: 0 0 10px 0; }
+        .product-description { font-size: 13.5px; line-height: 1.5; color: #4b5563; margin-bottom: 16px; }
+        .allergeni-box { background: var(--bg-all); border: 1px solid #fee2e2; border-radius: 8px; padding: 10px 12px; margin-top: auto; }
+        .allergeni-title { font-size: 11px; font-weight: 700; color: var(--txt-all); text-transform: uppercase; margin-bottom: 4px; }
+        .allergeni-list { font-size: 11.5px; color: #7f1d1d; margin: 0; }
     </style>
 </head>
 <body>
-
     <div class="ad-container">
-        
         <div class="lang-bar">
-            <label for="langSelect" id="langLabel">Language / Lingua:</label>
             <select id="langSelect" class="lang-select" onchange="changeLanguage(this.value)">
                 <option value="it">🇮🇹 Italiano</option>
                 <option value="en">🇬🇧 English</option>
@@ -210,64 +42,109 @@
                 <option value="fr">🇫🇷 Français</option>
             </select>
         </div>
-
-        <!-- Sezione Logo Orizzontale Pasticceria Futura -->
         <div class="brand-header">
-            <div class="logo-subtitle-top">Pasticceria</div>
+            <div class="logo-subtitle">Pasticceria</div>
             <h1 class="logo-title">FUTURA</h1>
             <div class="logo-services">Pasticceria &nbsp;|&nbsp; Caffetteria &nbsp;|&nbsp; Cioccolateria</div>
-            <div class="header-catalogo">
-                <p id="mainDesc">Gusci in pregiato cioccolato fondente 54% decorati a mano con burro di cacao e ripieni gourmet</p>
-            </div>
+            <div class="header-catalogo"><p id="mainDesc">Gusci in pregiato cioccolato fondente 54% decorati a mano con burro di cacao e ripieni gourmet</p></div>
         </div>
+        <div class="catalog-grid" id="grid-container"></div>
+    </div>
+    <script>
+        const itemsData = [
+            { id: 1, img: "foto_cocco.jpg", tag: "sub1", t: "title1", d: "desc1", a: "all1" },
+            { id: 2, img: "foto_vaniglia.jpg", tag: "sub2", t: "title2", d: "desc2", a: "all2" },
+            { id: 3, img: "foto_lampone.jpg", tag: "sub3", t: "title3", d: "desc3", a: "all3" },
+            { id: 4, img: "foto_caffe.jpg", tag: "sub4", t: "title4", d: "desc4", a: "all4" },
+            { id: 5, img: "foto_arachide.jpg", tag: "sub5", t: "title5", d: "desc5", a: "all5" },
+            { id: 6, img: "foto_amaretto.jpg", tag: "sub6", t: "title6", d: "desc6", a: "all6" },
+            { id: 7, img: "foto_pistacchio.jpg", tag: "sub7", t: "title7", d: "desc7", a: "all7" },
+            { id: 8, img: "foto_nocciola.jpg", tag: "sub8", t: "title8", d: "desc8", a: "all8" }
+        ];
+        const translations = {
+            it: {
+                mainDesc: "Gusci in pregiato cioccolato fondente 54% decorati a mano con burro di cacao e ripieni gourmet", allLabel: "⚠ Info Allergeni",
+                sub1: "Gusto Tropicale", title1: "Pralina Fondente & Cocco", desc1: "Camicia di cioccolato fondente al 54% che racchiude un morbido e vellutato ripieno di cremino al cocco ed eleganti scaglie di cocco disidratato.", all1: "Contiene: soia e frutta a guscio (mandorle). Tracce di latte.",
+                sub2: "I Grandi Classici", title2: "Pralina Fondente & Vaniglia Madagascar", desc2: "Un guscio lucido ed intenso impreziosito da un cuore morbido e avvolgente di cremino aromatizzato con le note calde della preziosa bacca di Vaniglia del Madagascar.", all2: "Contiene: soia e frutta a guscio (mandorle). Tracce di latte.",
+                sub3: "Fruttati & Creativi", title3: "Pralina Nocciola IGP & Lampone", desc3: "Copertura fondente 54% con una squisita farcitura interna di cremino alla Nocciola Piemonte IGP combinata con setoso cioccolato al latte e pezzetti croccanti di lampone disidratato.", all3: "Contiene: frutta a guscio (nociole), latte e soia.",
+                sub4: "Espresso Intenso", title4: "Pralina Caffè Tierra Bio & Nocciola", desc4: "Un guscio croccante che si fonde con la carica aromatica del caffè Lavazza ¡Tierra! Bio, strutturato in un cremino con cioccolato fondente e finissima pasta di Nocciola Piemonte IGP.", all4: "Contiene: frutta a guscio (nocciole) e soia. Tracce di latte.",
+                sub5: "Dolce & Salato", title5: "Pralina Fondente, Arachide & Choco Bianco", desc5: "Un incontro equilibrato tra l'amaro del guscio fondente al 54% e la dolcezza sapida di un cremino vellutato alle arachidi, unito alla cremosità del cioccolato bianco.", all5: "Contiene: arachidi, latte e soia.",
+                sub6: "Consistenze & Contrasti", title6: "Pralina Cocco & Amaretto Crumb", desc6: "Un guscio di cioccolato fondente 54% finemente decorato, che racchiude un ricco cremino al cioccolato bianco arricchito da esotiche scaglie di cocco e note croccanti di amaretto sbriciolato.", all6: "Contiene: latte, frutta a guscio (mandorle), soia e glutine.",
+                sub7: "Sfumature Intense", title7: "Pralina Fondente, Pistacchio & Choco Bianco", desc7: "Un guscio strutturato in purissimo cioccolato fondente al 54% che esalta un ripieno cremoso e avvolgente: un vellutato cremino al pistacchio strutturato con dolce cioccolato bianco.", all7: "Contiene: frutta a guscio (pistacchi), latte e soia.",
+                sub8: "Tradizione Piemontese", title8: "Pralina Classica Nocciola IGP", desc8: "L'eccellenza della tradizione piemontese racchiusa in una camicia di cioccolato fondente 54%. Il ripieno rivela un cremino setoso a base di finissimo cioccolato al latte e pura pasta di Nocciola Piemonte IGP.", all8: "Contiene: frutta a guscio (nocciole), latte e soia."
+            },
+            en: {
+                mainDesc: "Premium 54% dark chocolate shells hand-decorated with cocoa butter and filled with gourmet creams", allLabel: "⚠ Allergens",
+                sub1: "Tropical Flavor", title1: "Dark Chocolate & Coconut Praline", desc1: "A 54% dark chocolate shell enclosing a soft, velvety coconut cremino filling with elegant dehydrated coconut flakes.", all1: "Contains: soy and tree nuts (almonds). May contain traces of milk.",
+                sub2: "The Great Classics", title2: "Dark Chocolate & Madagascar Vanilla", desc2: "A glossy and intense shell enhanced by a soft and enveloping cremino heart flavored with warm notes of precious Madagascar vanilla bean.", all2: "Contains: soy and tree nuts (almonds). May contain traces of milk.",
+                sub3: "Fruity & Creative", title3: "IGP Hazelnut & Raspberry Praline", desc3: "54% dark coating with an exquisite internal filling of Piedmont IGP hazelnut cremino combined with silky milk chocolate and crunchy pieces of dehydrated raspberry.", all3: "Contains: tree nuts (hazelnuts), milk, and soy.",
+                sub4: "Intense Espresso", title4: "Tierra Bio Coffee & Hazelnut Praline", desc4: "A crunchy shell that blends with the aromatic boost of Lavazza ¡Tierra! Bio coffee, structured in a cremino with dark chocolate and ultra-fine Piedmont IGP hazelnut paste.", all4: "Contains: tree nuts (hazelnuts) and soy. May contain traces of milk.",
+                sub5: "Sweet & Savory", title5: "Dark Chocolate, Peanut & White Choco", desc5: "A balanced match between the bitterness of the 54% dark shell and the savory sweetness of a velvety peanut cremino, combined with smooth white chocolate.", all5: "Contains: peanuts, milk, and soy.",
+                sub6: "Textures & Contrasts", title6: "Coconut & Amaretto Crumb Praline", desc6: "A finely decorated 54% dark chocolate shell enclosing a rich white chocolate cremino enriched with exotic coconut flakes and crunchy notes of crumbled amaretto biscuits.", all6: "Contains: milk, tree nuts (almonds), soy, and gluten.",
+                sub7: "Intense Shades", title7: "Dark Chocolate, Pistachio & White Choco", desc7: "A structured shell in pure 54% dark chocolate that enhances a creamy and enveloping filling: a velvety pistachio cremino paired with sweet white chocolate.", all7: "Contains: tree nuts (pistachios), milk, and soy.",
+                sub8: "Piedmontese Tradition", title8: "Classic IGP Hazelnut Praline", desc8: "The excellence of Piedmontese tradition enclosed in a 54% dark chocolate shell. The filling reveals a silky cremino made with premium milk chocolate and pure Piedmont IGP hazelnut paste.", all8: "Contains: tree nuts (hazelnuts), milk, and soy."
+            },
+            de: {
+                mainDesc: "Feine Schalen aus 54% dunkler Schokolade, handdekoriert mit Kakaobutter und gefüllt mit Gourmet-Cremes", allLabel: "⚠ Allergene",
+                sub1: "Tropischer Geschmack", title1: "Dunkle Schokolade & Kokos-Praline", desc1: "Eine Schale aus 54% dunkler Schokolade mit einer weichen, samtigen Kokos-Cremino-Füllung und eleganten getrockneten Kokosraspeln.", all1: "Enthält: Soja und Schalenfrüchte (Mandeln). Kann Spuren von Milch enthalten.",
+                sub2: "Die Großen Klassiker", title2: "Dunkle Schokolade & Madagaskar-Vanille", desc2: "Eine glänzende, intensive Schale, verfeinert mit einem weichen Kern aus Cremino, aromatisiert mit warmen Noten echter Madagaskar-Vanilleschote.", all2: "Enthält: Soja und Schalenfrüchte (Mandeln). Kann Spuren von Milch enthalten.",
+                sub3: "Fruchtig & Kreativ", title3: "g.g.A. Haselnuss & Himbeer-Praline", desc3: "54% dunkler Überzug mit einer exquisiten inneren Füllung aus Piemont-Haselnuss-Cremino (g.g.A.), kombiniert mit seidiger Milchschokolade und knusprigen Stücken getrockneter Himbeere.", all3: "Enthält: Schalenfrüchte (Haselnüsse), Milch und Soja.",
+                sub4: "Intensiver Espresso", title4: "Tierra Bio Kaffee & Haselnuss Praline", desc4: "Eine knackige Schale, die mit dem aromatischen Kick von Lavazza ¡Tierra! Bio Kaffee verschmilzt, eingebettet in ein Cremino mit dunkler Schokolade und feinster Piemont-Haselnusspfaste.", all4: "Enthält: Schalenfrüchte (Haselnüsse) und Soja. Kann Spuren von Milch enthalten.",
+                sub5: "Süß & Salzig", title5: "Dunkle Schokolade, Erdnuss & Weiße Schoko", desc5: "Eine ausgewogene Kombination aus der Bitterkeit der 54% dunklen Schale und der salzigen Süße eines samtigen Erdnuss-Creminos, vereint mit zarter weißer Schokolade.", all5: "Enthält: Erdnüsse, Milch und Soja.",
+                sub6: "Texturen & Kontraste", title6: "Kokos & Amaretto-Brösel Praline", desc6: "Eine fein verzierte Schale aus 54% dunkler Schokolade mit einem reichhaltigen weißen Schokoladen-Cremino, verfeinert mit exotischen Kokosraspeln und knusprigen Amarettostücken.", all6: "Enthält: Milch, Schalenfrüchte (Mandeln), Soja und Gluten.",
+                sub7: "Intensive Nuancen", title7: "Dunkle Schokolade, Pistazie & Weiße Schoko", desc7: "Eine strukturierte Schale aus reiner 54% dunkler Schokolade, die eine cremige Füllung zur Geltung bringt: ein samtiges Pistazien-Cremino kombiniert mit süßer weißer Schokolade.", all7: "Enthält: Schalenfrüchte (Pistazien), Milch und Soja.",
+                sub8: "Piemontesische Tradition", title8: "Klassische g.g.A. Haselnuss-Praline", desc8: "Die Exzellenz piemontesischer Tradition, umhüllt von einer Schale aus 54% dunkler Schokolade. Die Füllung offenbart ein seidiges Cremino aus feinster Milchschokolade und reiner Piemont-Haselnusspaste.", all8: "Enthält: Schalenfrüchte (Haselnüsse), Milch und Soja."
+            },
+            es: {
+                mainDesc: "Cáscaras de chocolate negro premium al 54% decoradas a mano con manteca de cacao y rellenos gourmet", allLabel: "⚠ Alérgenos",
+                sub1: "Sabor Tropical", title1: "Bombón de Chocolate Negro y Coco", desc1: "Una fina capa de chocolate negro al 54% que encierra un suave y aterciopelado relleno de cremino de coco con elegantes escamas de coco deshidratado.", all1: "Contiene: soja y frutos de cáscara (almendras). Puede contener trazas de leche.",
+                sub2: "Los Grandes Clásicos", title2: "Chocolate Negro y Vainilla de Madagascar", desc2: "Una cobertura brillante e intensa enriquecida con un corazón suave de cremino aromatizado con las notas cálidas de la preciada vaina de vainilla de Madagascar.", all2: "Contiene: soja y frutos de cáscara (almendras). Puede contener trazas de leche.",
+                sub3: "Afrutados y Creativos", title3: "Bombón de Avellana IGP y Frambuesa", desc3: "Cobertura negra al 54% con un exquisito relleno interior de cremino de Avellana del Piamonte IGP combinado con sedoso chocolate con leche y trozos crujientes de frambuesa deshidratada.", all3: "Contiene: frutos de cáscara (avellanas), leche y soja.",
+                sub4: "Espresso Intenso", title4: "Bombón de Café Tierra Bio y Avellana", desc4: "Una capa crujiente que se funde con la intensidad aromática del café Lavazza ¡Tierra! Bio, estructurado en un cremino con chocolate negro y pasta fina de Avellana del Piamonte IGP.", all4: "Contiene: frutos de cáscara (avellanas) y soja. Puede contener trazas de leche.",
+                sub5: "Dulce y Salado", title5: "Bombón de Cacahuete y Choco Blanco", desc5: "Un encuentro equilibrado entre el amargor del chocolate negro al 54% y la dulzura salada de un cremino de cacahuete, combinado con la suavidad del chocolate blanco.", all5: "Contiene: cacahuetes, leche y soja.",
+                sub6: "Texturas y Contrastes", title6: "Bombón de Coco y Crujiente de Amaretto", desc6: "Cáscara de chocolate negro al 54% finamente decorada que contiene un rico cremino de chocolate blanco con escamas de coco y notas crujientes de galleta amaretto triturada.", all6: "Contiene: leche, frutos de cáscara (almendras), soja y gluten.",
+                sub7: "Matices Intensos", title7: "Chocolate Negro, Pistacho y Choco Blanco", desc7: "Cáscara estructurada en puro chocolate negro al 54% que resalta un relleno cremoso: un aterciopelado cremino de pistacho perfectamente combinado con dulce chocolate blanco.", all7: "Contiene: frutos de cáscara (pistachos), leche y soja.",
+                sub8: "Tradición del Piamonte", title8: "Bombón Clásico de Avellana IGP", desc8: "La excelencia de la tradición del Piamonte envuelta en chocolate negro al 54%. El relleno revela un cremino sedoso a base de chocolate con leche de primera calidad y pasta pura de Avellana del Piamonte IGP.", all8: "Contiene: frutos de cáscara (avellanas), leche y soja."
+            },
+            fr: {
+                mainDesc: "Coques en chocolat noir 54% de première qualité décorées à la main avec du beurre de cacao et des fourrages gourmands", allLabel: "⚠ Allergènes",
+                sub1: "Saveur Tropicale", title1: "Praline Chocolat Noir & Noix de Coco", desc1: "Une coque de chocolat noir à 54% renfermant un fourrage crémeux et velouté au cremino de coco avec de fins copeaux de noix de coco déshydratée.", all1: "Contient : soja et fruits à coque (amandes). Peut contenir des traces de lait.",
+                sub2: "Les Grands Classiques", title2: "Chocolat Noir & Vanille de Madagascar", desc2: "Une coque brillante ed intense sublimée par un cœur de cremino aromatisé aux notes chaudes de la précieuse gousse de vanille de Madagascar.", all2: "Contient : soja et fruits à coque (amandes). Peut contenir des traces de lait.",
+                sub3: "Fruités & Créatifs", title3: "Praline Noisette IGP & Framboise", desc3: "Enrobage noir 54% avec un délicieux fourrage intérieur de cremino à la Noisette du Piémont IGP combiné à un chocolat au lait soyeux et des éclats croquants de framboise déshydratée.", all3: "Contient : fruits à coque (noisettes), lait et soja.",
+                sub4: "Espresso Intense", title4: "Praline Café Tierra Bio & Noisette", desc4: "Une coque croquante che fusionne avec la force aromatique du café Lavazza ¡Tierra! Bio, structurée dans un cremino au chocolat noir et pâte fine de Noisette du Piémont IGP.", all4: "Contient : fruits à coque (noisettes) et soja. Peut contenir des traces de lait.",
+                sub5: "Sucré & Salé", title5: "Chocolat Noir, Cacahuète & Choco Blanc", desc5: "Un mariage équilibré entre l'amertume du chocolat noir à 54% et la douceur salée d'un cremino onctueux aux cacahuètes, associé à la douceur du chocolat blanc.", all5: "Contient : cacahuètes, lait et soja.",
+                sub6: "Textures & Contrastes", title6: "Praline Coco & Éclats d'Amaretto", desc6: "Coque de chocolat noir 54% finement décorée, renfermant un riche cremino au chocolat blanc enrichi de copeaux de coco exotique et de notes croquantes de biscuits amaretto émiettés.", all6: "Contient : lait, fruits à coque (amandes), soja et gluten.",
+                sub7: "Nuances Intenses", title7: "Chocolat Noir, Pistache & Choco Blanc", desc7: "Coque structurée en pur chocolat noir à 54% mettant en valeur un fourrage crémeux : un cremino onctueux à la pistache associé à la douceur délicieuse du chocolat blanc.", all7: "Contient : fruits à coque (pistaches), lait et soja.",
+                sub8: "Tradizione Piemontese", title8: "Praline Classique Noisette IGP", desc8: "L'excellence della tradizione piemontese racchiusa in una camicia di cioccolato fondente 54%. Il ripieno rivela un cremino setoso a base di finissimo cioccolato al lait e pura pasta di Nocciola Piemonte IGP.", all8: "Contient : fruits à coque (noisettes), lait et soja."
+            }
+        };
 
-        <div class="catalog-grid">
-
-            <!-- 1. COCCO -->
-            <div class="product-card">
-                <div class="image-container"><img src="foto_cocco.jpg" alt="Pralina Cocco" class="product-image"></div>
-                <div class="product-content">
-                    <div class="product-subtitle" data-key="sub1">Gusto Tropicale</div>
-                    <h2 class="product-title" data-key="title1">Pralina Fondente & Cocco</h2>
-                    <p class="product-description" data-key="desc1">Camicia di cioccolato fondente al 54% che racchiude un morbido e vellutato ripieno di cremino al cocco ed eleganti scaglie di cocco disidratato.</p>
-                    <div class="allergeni-box">
-                        <div class="allergeni-title" data-key="allLabel">⚠ Allergeni & Ingredienti</div>
-                        <p class="allergeni-list" data-key="all1">Contiene: soia e frutta a guscio (mandorle). Può contenere tracce di latte.</p>
+        function renderGrid(lang) {
+            const container = document.getElementById("grid-container");
+            container.innerHTML = "";
+            document.getElementById("mainDesc").innerText = translations[lang].mainDesc;
+            
+            itemsData.forEach(item => {
+                const card = document.createElement("div");
+                card.className = "product-card";
+                card.innerHTML = `
+                    <div class="image-container"><img src="${item.img}" alt="Pralina" class="product-image"></div>
+                    <div class="product-content">
+                        <div class="product-subtitle">${translations[lang][item.tag]}</div>
+                        <h2 class="product-title">${translations[lang][item.t]}</h2>
+                        <p class="product-description">${translations[lang][item.d]}</p>
+                        <div class="allergeni-box">
+                            <div class="allergeni-title">${translations[lang].allLabel}</div>
+                            <p class="allergeni-list">${translations[lang][item.a]}</p>
+                        </div>
                     </div>
-                </div>
-            </div>
+                `;
+                container.appendChild(card);
+            });
+        }
 
-            <!-- 2. VANIGLIA -->
-            <div class="product-card">
-                <div class="image-container"><img src="foto_vaniglia.jpg" alt="Pralina Vaniglia" class="product-image"></div>
-                <div class="product-content">
-                    <div class="product-subtitle" data-key="sub2">I Grandi Classici</div>
-                    <h2 class="product-title" data-key="title2">Pralina Fondente & Vaniglia Madagascar</h2>
-                    <p class="product-description" data-key="desc2">Un guscio lucido ed intenso impreziosito da un cuore morbido e avvolgente di cremino aromatizzato con le note calde della preziosa bacca di Vaniglia del Madagascar.</p>
-                    <div class="allergeni-box">
-                        <div class="allergeni-title" data-key="allLabel">⚠ Allergeni & Ingredienti</div>
-                        <p class="allergeni-list" data-key="all2">Contiene: soia e frutta a guscio (mandorle). Può contenere tracce di latte.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 3. LAMPONE -->
-            <div class="product-card">
-                <div class="image-container"><img src="foto_lampone.jpg" alt="Pralina Lampone" class="product-image"></div>
-                <div class="product-content">
-                    <div class="product-subtitle" data-key="sub3">Fruttati & Creativi</div>
-                    <h2 class="product-title" data-key="title3">Pralina Nocciola IGP & Lampone</h2>
-                    <p class="product-description" data-key="desc3">Copertura fondente 54% con una squisita farcitura interna di cremino alla Nocciola Piemonte IGP combinata con setoso cioccolato al latte e pezzetti croccanti di lampone disidratato.</p>
-                    <div class="allergeni-box">
-                        <div class="allergeni-title" data-key="allLabel">⚠ Allergeni & Ingredienti</div>
-                        <p class="allergeni-list" data-key="all3">Contiene: frutta a guscio (nocciole), latte e soia.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 4. CAFFÈ -->
-            <div class="product-card">
-                <div class="image-container"><img src="foto_caffe.jpg" alt="Pralina Caffè" class="product-image"></div>
-                <div class="product-content">
-                    <div class="product-subtitle" data-key="sub4">Espresso Intenso</div>
-                    <h2 class="product-title" data-key="title4">Pralina Caffè Tierra Bio & Nocciola</h2>
+        function changeLanguage(lang) { renderGrid(lang); }
+        renderGrid("it");
+    </script>
+</body>
+</html>
